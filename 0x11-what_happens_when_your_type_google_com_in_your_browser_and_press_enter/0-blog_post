@@ -1,0 +1,64 @@
+When you kind https://www.Google.Com into your browser and press Enter, a complex collection of occasions is precipitated to retrieve and show the asked net web web page. This process includes more than one additives of the net stack, each gambling a essential function in delivering the final content material material. Let’s walk thru each step in detail:
+1. DNS Request
+
+The first step is resolving the area call www.Google.Com into an IP cope with. This is wherein the Domain Name System (DNS) comes into play:
+
+    Browser Cache: The browser first assessments its cache to look if it has these days resolved the area.
+    Operating System Cache: If the browser cache doesn’t have the facts, the running system’s cache is checked.
+    DNS Resolver Cache: If the OS cache is empty, the request is despatched to a DNS resolver (regularly furnished through the use of your ISP).
+    Recursive DNS Query: The DNS resolver starts offevolved querying the DNS hierarchy, starting with the muse DNS servers, followed by the TLD (Top-Level Domain) servers, and sooner or later the authoritative DNS servers for google.Com.
+    IP Address Returned: The authoritative server for Google returns the IP address associated with www.Google.Com.
+
+2. TCP/IP Connection
+
+With the IP deal with obtained, your browser wishes to set up a connection with the server hosting the net website online:
+
+    TCP Handshake: The browser initiates a TCP connection with the server the usage of the 3-manner handshake approach:
+        SYN: The browser sends a SYN (synchronize) packet to the server.
+        SYN-ACK: The server responds with a SYN-ACK (synchronize-renowned) packet.
+        ACK: The browser sends an ACK (widely known) packet decrease lower back to the server, putting in the relationship.
+
+3. Firewall
+
+During this connection method, firewalls on each the customer and server facets take a look at the packets:
+
+    Client-Side Firewall: Ensures that outgoing visitors out of your tool is allowed.
+    Server-Side Firewall: Inspects incoming web page visitors to make certain it’s allowed to reap the internet server. If any of those packets are deemed malicious, the firewall can block them.
+
+Four. HTTPS/SSL
+
+Given that the URL uses HTTPS, SSL/TLS encryption is needed to stable the communique some of the browser and the server:
+
+    SSL/TLS Handshake: This technique includes:
+        Certificate Exchange: The server sends its SSL certificate to the browser.
+        Certificate Verification: The browser verifies the certificate closer to trusted Certificate Authorities (CAs).
+        Session Keys: Both the browser and server generate consultation keys to encrypt the verbal exchange.
+
+Five. Load Balancer
+
+Before engaging in the real internet server, the request can also bypass through a load balancer:
+
+    Distributing Load: The load balancer distributes incoming requests throughout a couple of servers to ensure no single server is overwhelmed.
+    Health Checks: Continuously video display units the health of servers and routes traffic only to healthful ones.
+
+6. Web Server
+
+The load balancer forwards the request to one of the available web servers:
+
+    Handling Request: The internet server (e.G., Apache, Nginx) techniques the request, identifying if it can serve the asked aid straight away or if in addition processing is needed.
+    Static Content: If the requested useful resource is a static document (HTML, CSS, JavaScript), the net server retrieves it from the document device and sends it again to the browser.
+
+7. Application Server
+
+For dynamic content material, the net server forwards the request to an software program server:
+
+    Processing Request: The utility server (e.G., Node.Js, Django) runs the important application not unusual feel, possibly interacting with different services or databases.
+    Generating Response: It strategies the facts, runs the vital code, and generates the dynamic content (e.G., a customized homepage).
+
+8. Database
+
+If the utility commonplace experience requires records storage or retrieval, the software program server interacts with a database:
+
+    Query Execution: The software server sends SQL queries (or specific kinds of queries) to the database server (e.G., MySQL, PostgreSQL).
+    Data Retrieval: The database approaches the queries and returns the requested records to the utility server.
+    Data Processing: The software server uses this data to assemble the very last reaction.
